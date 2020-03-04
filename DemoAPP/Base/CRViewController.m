@@ -33,6 +33,7 @@
     [self.navigationController setNavigationBarHidden:!self.isShowNavBar animated:animated];
 }
 
+
 //默认不支持旋转
 - (BOOL)shouldAutorotate {
     return NO;
