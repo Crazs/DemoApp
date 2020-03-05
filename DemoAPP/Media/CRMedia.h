@@ -6,8 +6,8 @@
 //  Copyright © 2019年 Crazs. All rights reserved.
 //
 
-#import "CRBaseModel.h"
 #import <UIKit/UIKit.h>
+#import <CRBaseLib/BaseModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,10 +22,10 @@ typedef NS_ENUM(NSInteger, CRMediaType) {
 /*!
  @brief     媒体类型
  */
-@interface CRMedia : CRBaseModel<NSSecureCoding>
+@interface CRMedia : BaseModel<NSSecureCoding>
 
 /*!
- @brief     实名认证情况
+ @brief     媒体类型
  */
 @property (nonatomic, assign) CRMediaType mediaType;
 

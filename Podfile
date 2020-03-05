@@ -6,7 +6,11 @@ target 'DemoAPP' do
   use_frameworks!
 
   # Pods for DemoAPP
+  pod 'Masonry', '~> 1.1.0'
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'SDWebImage', '~> 4.4.6'
+  pod 'MJRefresh'
   pod 'CRHelperLib', :path => '~/Documents/CRHelperLib'
   pod 'CRBaseLib', :path => '~/Documents/CRBaseLib'
-
+  
 end
