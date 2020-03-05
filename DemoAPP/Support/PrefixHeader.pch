@@ -10,7 +10,8 @@
 #define PrefixHeader_pch
 
 #import <AFNetworking/AFNetworking.h>
-#import <Masonry/Masonry.h>
 
+#import <Masonry/Masonry.h>
+#import <CRHelperLib/CRHelperLib.h>
 
 #endif /* PrefixHeader_pch */

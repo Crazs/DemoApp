@@ -44,7 +44,6 @@ typedef NS_ENUM(NSInteger, CRMediaType) {
  */
 @property (nonatomic, copy) NSString * suffix;
 
-
 @end
 
 
@@ -82,7 +81,6 @@ typedef NS_ENUM(NSInteger, CRMediaType) {
  @brief     图片高度
  */
 @property (nonatomic, assign) CGFloat * height;
-
 
 @end
 

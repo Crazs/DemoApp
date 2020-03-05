@@ -37,17 +37,38 @@
 +(BOOL)supportsSecureCoding{
     return YES;
 }
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        self.mediaType = CRMediaTypeFile;
+    }
+    return self;
+}
 @end
 
 @implementation CRMediaImage
 +(BOOL)supportsSecureCoding{
     return YES;
 }
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        self.mediaType = CRMediaTypeImage;
+    }
+    return self;
+}
 @end
 
 @implementation CRMediaAudio
 +(BOOL)supportsSecureCoding{
     return YES;
+}
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        self.mediaType = CRMediaTypeVideo;
+    }
+    return self;
 }
 @end
 

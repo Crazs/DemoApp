@@ -10,7 +10,6 @@
 		4F694BE65CB448E10CE6AEAF /* Pods_DemoAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5165FBF498C8D000C9CCB63E /* Pods_DemoAPP.framework */; };
 		B8100E412410D1F9005328F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E402410D1F9005328F0 /* AppDelegate.m */; };
 		B8100E442410D1F9005328F0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E432410D1F9005328F0 /* SceneDelegate.m */; };
-		B8100E472410D1F9005328F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E462410D1F9005328F0 /* ViewController.m */; };
 		B8100E4A2410D1F9005328F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8100E482410D1F9005328F0 /* Main.storyboard */; };
 		B8100E4C2410D1FA005328F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8100E4B2410D1FA005328F0 /* Assets.xcassets */; };
 		B8100E4F2410D1FA005328F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8100E4D2410D1FA005328F0 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,14 @@
 		B8100E6B2410E10B005328F0 /* CRUserStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E612410E10B005328F0 /* CRUserStatus.m */; };
 		B8100E6C2410E10B005328F0 /* CRAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E622410E10B005328F0 /* CRAuthentication.m */; };
 		B8100E6D2410E10B005328F0 /* CRFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E682410E10B005328F0 /* CRFileManager.m */; };
+		B8100E712410EC71005328F0 /* CRMediaContainArrangement.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E702410EC71005328F0 /* CRMediaContainArrangement.m */; };
+		B8100E742410EEFB005328F0 /* CRMediaEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E732410EEFB005328F0 /* CRMediaEditCell.m */; };
+		B82D75632410FFA800D8B731 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82D75622410FFA800D8B731 /* MainTabBarController.m */; };
+		B82D75692411003800D8B731 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82D75682411003800D8B731 /* MeViewController.m */; };
+		B82D756F2411008800D8B731 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82D756E2411008800D8B731 /* HomeViewController.m */; };
+		B82D75712411053000D8B731 /* SubControllers.plist in Resources */ = {isa = PBXBuildFile; fileRef = B82D75702411053000D8B731 /* SubControllers.plist */; };
+		B82D7574241105DC00D8B731 /* CRMeidaAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82D7573241105DC00D8B731 /* CRMeidaAddController.m */; };
+		B82D757D241146D000D8B731 /* CRSecondWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82D757C241146D000D8B731 /* CRSecondWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +36,6 @@
 		B8100E402410D1F9005328F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8100E422410D1F9005328F0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		B8100E432410D1F9005328F0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		B8100E452410D1F9005328F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B8100E462410D1F9005328F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B8100E492410D1F9005328F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8100E4B2410D1FA005328F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8100E4E2410D1FA005328F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +53,21 @@
 		B8100E652410E10B005328F0 /* CRAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRAuthentication.h; sourceTree = "<group>"; };
 		B8100E672410E10B005328F0 /* CRFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFileManager.h; sourceTree = "<group>"; };
 		B8100E682410E10B005328F0 /* CRFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRFileManager.m; sourceTree = "<group>"; };
+		B8100E6F2410EC71005328F0 /* CRMediaContainArrangement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMediaContainArrangement.h; sourceTree = "<group>"; };
+		B8100E702410EC71005328F0 /* CRMediaContainArrangement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMediaContainArrangement.m; sourceTree = "<group>"; };
+		B8100E722410EEFB005328F0 /* CRMediaEditCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMediaEditCell.h; sourceTree = "<group>"; };
+		B8100E732410EEFB005328F0 /* CRMediaEditCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMediaEditCell.m; sourceTree = "<group>"; };
+		B82D75612410FFA800D8B731 /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		B82D75622410FFA800D8B731 /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		B82D75672411003800D8B731 /* MeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		B82D75682411003800D8B731 /* MeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		B82D756D2411008800D8B731 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B82D756E2411008800D8B731 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B82D75702411053000D8B731 /* SubControllers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SubControllers.plist; sourceTree = "<group>"; };
+		B82D7572241105DC00D8B731 /* CRMeidaAddController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMeidaAddController.h; sourceTree = "<group>"; };
+		B82D7573241105DC00D8B731 /* CRMeidaAddController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMeidaAddController.m; sourceTree = "<group>"; };
+		B82D757B241146D000D8B731 /* CRSecondWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSecondWindowController.h; sourceTree = "<group>"; };
+		B82D757C241146D000D8B731 /* CRSecondWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSecondWindowController.m; sourceTree = "<group>"; };
 		E1B16FFFABC8ED627F6A8F06 /* Pods-DemoAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAPP.release.xcconfig"; path = "Target Support Files/Pods-DemoAPP/Pods-DemoAPP.release.xcconfig"; sourceTree = "<group>"; };
 		EDE9D79FA00280AAA8BD6F59 /* Pods-DemoAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAPP.debug.xcconfig"; path = "Target Support Files/Pods-DemoAPP/Pods-DemoAPP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,23 +122,21 @@
 		B8100E3E2410D1F9005328F0 /* DemoAPP */ = {
 			isa = PBXGroup;
 			children = (
-				B8100E662410E10B005328F0 /* File */,
-				B8100E5B2410E10B005328F0 /* Media */,
-				B8100E5E2410E10B005328F0 /* UserCreator */,
-				B8100E582410D203005328F0 /* support */,
+				B82D757A2411452900D8B731 /* Module */,
+				B82D75792411450000D8B731 /* Controller */,
+				B82D75602410FF4B00D8B731 /* Structure */,
+				B8100E582410D203005328F0 /* Support */,
 			);
 			path = DemoAPP;
 			sourceTree = "<group>";
 		};
-		B8100E582410D203005328F0 /* support */ = {
+		B8100E582410D203005328F0 /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				B8100E3F2410D1F9005328F0 /* AppDelegate.h */,
 				B8100E402410D1F9005328F0 /* AppDelegate.m */,
 				B8100E422410D1F9005328F0 /* SceneDelegate.h */,
 				B8100E432410D1F9005328F0 /* SceneDelegate.m */,
-				B8100E452410D1F9005328F0 /* ViewController.h */,
-				B8100E462410D1F9005328F0 /* ViewController.m */,
 				B8100E482410D1F9005328F0 /* Main.storyboard */,
 				B8100E4B2410D1FA005328F0 /* Assets.xcassets */,
 				B8100E4D2410D1FA005328F0 /* LaunchScreen.storyboard */,
@@ -126,14 +144,14 @@
 				B8100E512410D1FA005328F0 /* main.m */,
 				B8100E5A2410DE60005328F0 /* PrefixHeader.pch */,
 			);
-			path = support;
+			path = Support;
 			sourceTree = "<group>";
 		};
 		B8100E5B2410E10B005328F0 /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				B8100E5C2410E10B005328F0 /* CRMedia.m */,
 				B8100E5D2410E10B005328F0 /* CRMedia.h */,
+				B8100E5C2410E10B005328F0 /* CRMedia.m */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -159,6 +177,53 @@
 				B8100E682410E10B005328F0 /* CRFileManager.m */,
 			);
 			path = File;
+			sourceTree = "<group>";
+		};
+		B8100E6E2410EBAD005328F0 /* MediaContainer */ = {
+			isa = PBXGroup;
+			children = (
+				B8100E6F2410EC71005328F0 /* CRMediaContainArrangement.h */,
+				B8100E702410EC71005328F0 /* CRMediaContainArrangement.m */,
+				B8100E722410EEFB005328F0 /* CRMediaEditCell.h */,
+				B8100E732410EEFB005328F0 /* CRMediaEditCell.m */,
+			);
+			path = MediaContainer;
+			sourceTree = "<group>";
+		};
+		B82D75602410FF4B00D8B731 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				B82D75612410FFA800D8B731 /* MainTabBarController.h */,
+				B82D75622410FFA800D8B731 /* MainTabBarController.m */,
+				B82D75672411003800D8B731 /* MeViewController.h */,
+				B82D75682411003800D8B731 /* MeViewController.m */,
+				B82D756D2411008800D8B731 /* HomeViewController.h */,
+				B82D756E2411008800D8B731 /* HomeViewController.m */,
+				B82D75702411053000D8B731 /* SubControllers.plist */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		B82D75792411450000D8B731 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B82D7572241105DC00D8B731 /* CRMeidaAddController.h */,
+				B82D7573241105DC00D8B731 /* CRMeidaAddController.m */,
+				B82D757B241146D000D8B731 /* CRSecondWindowController.h */,
+				B82D757C241146D000D8B731 /* CRSecondWindowController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B82D757A2411452900D8B731 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B8100E5E2410E10B005328F0 /* UserCreator */,
+				B8100E662410E10B005328F0 /* File */,
+				B8100E5B2410E10B005328F0 /* Media */,
+				B8100E6E2410EBAD005328F0 /* MediaContainer */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +288,7 @@
 				B8100E4F2410D1FA005328F0 /* LaunchScreen.storyboard in Resources */,
 				B8100E4C2410D1FA005328F0 /* Assets.xcassets in Resources */,
 				B8100E4A2410D1F9005328F0 /* Main.storyboard in Resources */,
+				B82D75712411053000D8B731 /* SubControllers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,15 +341,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8100E472410D1F9005328F0 /* ViewController.m in Sources */,
 				B8100E412410D1F9005328F0 /* AppDelegate.m in Sources */,
+				B82D75692411003800D8B731 /* MeViewController.m in Sources */,
+				B82D75632410FFA800D8B731 /* MainTabBarController.m in Sources */,
 				B8100E6C2410E10B005328F0 /* CRAuthentication.m in Sources */,
+				B82D756F2411008800D8B731 /* HomeViewController.m in Sources */,
+				B82D7574241105DC00D8B731 /* CRMeidaAddController.m in Sources */,
+				B8100E742410EEFB005328F0 /* CRMediaEditCell.m in Sources */,
+				B82D757D241146D000D8B731 /* CRSecondWindowController.m in Sources */,
 				B8100E6B2410E10B005328F0 /* CRUserStatus.m in Sources */,
 				B8100E522410D1FA005328F0 /* main.m in Sources */,
 				B8100E692410E10B005328F0 /* CRMedia.m in Sources */,
 				B8100E6A2410E10B005328F0 /* CRAccount.m in Sources */,
 				B8100E6D2410E10B005328F0 /* CRFileManager.m in Sources */,
 				B8100E442410D1F9005328F0 /* SceneDelegate.m in Sources */,
+				B8100E712410EC71005328F0 /* CRMediaContainArrangement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DemoAPP/support/PrefixHeader.pch";
 				INFOPLIST_FILE = DemoAPP/support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DemoAPP/support/PrefixHeader.pch";
 				INFOPLIST_FILE = DemoAPP/support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
