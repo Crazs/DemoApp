@@ -6,7 +6,6 @@
 //  Copyright © 2019年 Crazs. All rights reserved.
 //
 
-#import "CRBaseModel.h"
 #import "CRMedia.h"
 #import "CRAuthentication.h"
 
@@ -15,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  @brief     账户信息
  */
-@interface CRAccount : CRBaseModel<NSSecureCoding>
+@interface CRAccount : BaseModel<NSSecureCoding>
 
 /*!
  @brief     用户名

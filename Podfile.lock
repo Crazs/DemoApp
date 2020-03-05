@@ -1,0 +1,62 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CRBaseLib (0.0.1):
+    - AFNetworking (~> 3.2.1)
+    - CRHelperLib
+    - Masonry (~> 1.1.0)
+    - MJRefresh
+    - SDWebImage (~> 4.4.6)
+  - CRHelperLib (0.1.1):
+    - Masonry (~> 1.1.0)
+  - Masonry (1.1.0)
+  - MJRefresh (3.3.1)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.2.1)
+  - CRBaseLib (from `~/Documents/CRBaseLib`)
+  - CRHelperLib (from `~/Documents/CRHelperLib`)
+  - Masonry (~> 1.1.0)
+  - MJRefresh
+  - SDWebImage (~> 4.4.6)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Masonry
+    - MJRefresh
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  CRBaseLib:
+    :path: "~/Documents/CRBaseLib"
+  CRHelperLib:
+    :path: "~/Documents/CRHelperLib"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CRBaseLib: 57a6810733706dc32a13b629545c13cb38a841bb
+  CRHelperLib: cce8e52f9e3b991c4eab15cbfaa414f43a71f0bb
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+
+PODFILE CHECKSUM: d28f1fa2eeee5378f926737739fff834cb4aeac7
+
+COCOAPODS: 1.8.4
