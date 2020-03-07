@@ -12,6 +12,7 @@ target 'DemoAPP' do
   pod 'AFNetworking', '~> 3.2.1'
   pod 'SDWebImage', '~> 4.4.6'
   pod 'MJRefresh'
+  pod 'CTAssetsPickerController', '~> 3.2.4'
 #  pod 'CRHelperLib'
 #  pod 'CRBaseLib'
   

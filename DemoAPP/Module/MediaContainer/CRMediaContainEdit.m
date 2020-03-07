@@ -1,25 +1,25 @@
 //
-//  CRMediaContainArrangement.m
+//  CRMediaContainEdit.m
 //  DemoAPP
 //
 //  Created by 周文涛 on 2020/3/5.
 //  Copyright © 2020 Crazs. All rights reserved.
 //
 
-#import "CRMediaContainArrangement.h"
+#import "CRMediaContainEdit.h"
 #import "CRMediaEditCell.h"
 
 #define D_offset 8
 #define D_lineNum 3
 #define D_maxCount 9
 
-@interface CRMediaContainArrangement()
+@interface CRMediaContainEdit()
 
 @property (nonatomic, strong) NSMutableArray * medias;
 
 @end
 
-@implementation CRMediaContainArrangement
+@implementation CRMediaContainEdit
 static CGFloat __width = CGFLOAT_MIN;
 static CGFloat __itemCount = 0;
 static CGFloat __sizeForCRMediaContainItem(CGFloat width){
@@ -39,7 +39,7 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
 }
 
 - (instancetype)init{
-    self = [super initWithFrame:CGRectZero collectionViewLayout:[CRMediaContainArrangement customFlowlayout]];
+    self = [super initWithFrame:CGRectZero collectionViewLayout:[CRMediaContainEdit customFlowlayout]];
     if (self) {
         [self createSubView];
     }
@@ -47,7 +47,7 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
 }
 
 - (instancetype)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame collectionViewLayout:[CRMediaContainArrangement customFlowlayout]];
+    self = [super initWithFrame:frame collectionViewLayout:[CRMediaContainEdit customFlowlayout]];
     if (self) {
         [self createSubView];
     }
@@ -82,7 +82,6 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
     self.delegate = self;
     self.dataSource = self;
     [self registerClass:[CRMediaEditCell class] forCellWithReuseIdentifier:cellIdentifier(CRMediaEditCell)];
-    
 }
 
 - (void)layoutSubviews{
@@ -91,7 +90,7 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
         return;
     }
     __width = self.width;
-    __itemCount = MIN(self.maxCount, self.medias.count);
+    __itemCount = MIN([self maxCount], self.medias.count);
     CGFloat h = __sizeForCRMediaContainItem(__width);
     if (!__itemCount) {
         if (self.heightChange) {
@@ -107,7 +106,7 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
 
 #pragma mark - UICollectionViewDelegate
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return MIN(self.maxCount, self.medias.count);
+    return MIN([self maxCount], self.medias.count);
 }
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;
@@ -122,11 +121,6 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
     CRMediaEditCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier(CRMediaEditCell) forIndexPath:indexPath];
     cell.cellModel = itemModel;
     WEAK_SELF
-    [cell setOnClickPlayBtn:^{
-        if (weakself.clickItemPlay) {
-            weakself.clickItemPlay(indexPath.item, itemModel);
-        }
-    }];
     [cell setOnClickRemoveBtn:^{
         [weakself.medias removeObjectAtIndex:indexPath.item];
         [weakself reloadData];
@@ -135,17 +129,39 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    CRMedia * itemModel = [self.medias objectAtIndex:indexPath.item];
+    if (self.clickItem) {
+        self.clickItem(indexPath.item, itemModel);
+    }
+}
+
+- (NSUInteger)currentCount{
+    return self.medias.count;
+}
+
+
+- (void)resetMedias:(NSArray *)medias{
+    [self.medias setArray:[medias subarrayWithRange:NSMakeRange(0, MIN([self maxCount], medias.count))]];
+    [self reloadData];
+}
+
 - (void)addMedia:(id)media{
-    if (self.medias.count > self.maxCount) {
+    if (self.medias.count > [self itemMaxCount]) {
         return;
     }
     [self.medias addObject:media];
     [self reloadData];
 }
 
-- (void)resetMedias:(NSArray *)medias{
-    [self.medias setArray:medias];
+- (void)addMedias:(NSArray *)medias{
+    NSRange range = NSMakeRange(0, MIN(MAX(0, [self itemMaxCount] - self.medias.count), medias.count));
+    [self.medias addObjectsFromArray:[medias subarrayWithRange:range]];
     [self reloadData];
+}
+
+- (NSInteger)itemMaxCount{
+    return self.maxCount;
 }
 
 @end

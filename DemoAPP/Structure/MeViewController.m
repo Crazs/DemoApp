@@ -18,8 +18,12 @@
     [super viewDidLoad];
     self.navigationItem.title = @"个人中心";
     
-    //[self createSubView];
-    //[self createNavigationBar];
+    [self createSubView];
+}
+
+- (void)createSubView{
+    [super createSubView];
+
 }
 
 #pragma mark - HTTP
@@ -29,19 +33,6 @@
 #pragma mark - Public
 
 #pragma mark - Private
-
-//- (void)createNavigationBar{
-//
-//}
-//
-//- (void)createSubView{
-//
-//    [self makeSubViewsLayout];
-//}
-//
-//- (void)makeSubViewsLayout{
-//
-//}
 
 #pragma mark - Setter
 

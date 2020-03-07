@@ -14,13 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CRMediaEditCell : UICollectionViewCell
 
-@property (nonatomic, weak)CRMedia * cellModel;
+@property (nonatomic, weak)id cellModel;
 
 @property (nonatomic, strong) UIImageView * rImageView;
-@property (nonatomic, strong) UIButton * playButton;
+@property (nonatomic, strong) UIImageView * playImageV;
 @property (nonatomic, strong) UIButton * removeButton;
 
-@property (nonatomic, copy) void(^onClickPlayBtn)(void);
 @property (nonatomic, copy) void(^onClickRemoveBtn)(void);
 
 @end

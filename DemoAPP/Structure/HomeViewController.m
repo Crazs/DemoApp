@@ -19,11 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"首页";
-    
-    [self createSubView];
 }
 
 - (void)createSubView{
+    [super createSubView];
+
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SubControllers" ofType:@"plist"];
     NSArray *array = [NSArray arrayWithContentsOfFile:path];
     self.dataSource = [[NSMutableArray alloc] initWithArray:array];

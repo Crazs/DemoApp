@@ -23,14 +23,6 @@
     [self createSubView];
 }
 
-#pragma mark - HTTP
-
-#pragma mark - Delegate
-
-#pragma mark - Public
-
-#pragma mark - Private
-
 - (void)createSubView{
     HomeViewController * homeVC = [[HomeViewController alloc] init];
     BaseNavigationController * homeNav = [[BaseNavigationController alloc]initWithRootViewController:homeVC];
@@ -56,6 +48,13 @@
     self.tabBar.backgroundColor = Color_333;
 }
 
+#pragma mark - HTTP
+
+#pragma mark - Delegate
+
+#pragma mark - Public
+
+#pragma mark - Private
 
 #pragma mark - Setter
 

@@ -19,7 +19,7 @@
 		B8100E6B2410E10B005328F0 /* CRUserStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E612410E10B005328F0 /* CRUserStatus.m */; };
 		B8100E6C2410E10B005328F0 /* CRAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E622410E10B005328F0 /* CRAuthentication.m */; };
 		B8100E6D2410E10B005328F0 /* CRFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E682410E10B005328F0 /* CRFileManager.m */; };
-		B8100E712410EC71005328F0 /* CRMediaContainArrangement.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E702410EC71005328F0 /* CRMediaContainArrangement.m */; };
+		B8100E712410EC71005328F0 /* CRMediaContainEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E702410EC71005328F0 /* CRMediaContainEdit.m */; };
 		B8100E742410EEFB005328F0 /* CRMediaEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E732410EEFB005328F0 /* CRMediaEditCell.m */; };
 		B82D75632410FFA800D8B731 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82D75622410FFA800D8B731 /* MainTabBarController.m */; };
 		B82D75692411003800D8B731 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82D75682411003800D8B731 /* MeViewController.m */; };
@@ -27,6 +27,8 @@
 		B82D75712411053000D8B731 /* SubControllers.plist in Resources */ = {isa = PBXBuildFile; fileRef = B82D75702411053000D8B731 /* SubControllers.plist */; };
 		B82D7574241105DC00D8B731 /* CRMeidaAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82D7573241105DC00D8B731 /* CRMeidaAddController.m */; };
 		B82D757D241146D000D8B731 /* CRSecondWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82D757C241146D000D8B731 /* CRSecondWindowController.m */; };
+		B890C95024122B93008FC5CF /* CRSystemButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B890C94F24122B93008FC5CF /* CRSystemButtonController.m */; };
+		B890C953241258A2008FC5CF /* CRMediaContainEditCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = B890C952241258A2008FC5CF /* CRMediaContainEditCustom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +55,8 @@
 		B8100E652410E10B005328F0 /* CRAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRAuthentication.h; sourceTree = "<group>"; };
 		B8100E672410E10B005328F0 /* CRFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFileManager.h; sourceTree = "<group>"; };
 		B8100E682410E10B005328F0 /* CRFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRFileManager.m; sourceTree = "<group>"; };
-		B8100E6F2410EC71005328F0 /* CRMediaContainArrangement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMediaContainArrangement.h; sourceTree = "<group>"; };
-		B8100E702410EC71005328F0 /* CRMediaContainArrangement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMediaContainArrangement.m; sourceTree = "<group>"; };
+		B8100E6F2410EC71005328F0 /* CRMediaContainEdit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMediaContainEdit.h; sourceTree = "<group>"; };
+		B8100E702410EC71005328F0 /* CRMediaContainEdit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMediaContainEdit.m; sourceTree = "<group>"; };
 		B8100E722410EEFB005328F0 /* CRMediaEditCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMediaEditCell.h; sourceTree = "<group>"; };
 		B8100E732410EEFB005328F0 /* CRMediaEditCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMediaEditCell.m; sourceTree = "<group>"; };
 		B82D75612410FFA800D8B731 /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
@@ -68,6 +70,10 @@
 		B82D7573241105DC00D8B731 /* CRMeidaAddController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMeidaAddController.m; sourceTree = "<group>"; };
 		B82D757B241146D000D8B731 /* CRSecondWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSecondWindowController.h; sourceTree = "<group>"; };
 		B82D757C241146D000D8B731 /* CRSecondWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSecondWindowController.m; sourceTree = "<group>"; };
+		B890C94E24122B93008FC5CF /* CRSystemButtonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSystemButtonController.h; sourceTree = "<group>"; };
+		B890C94F24122B93008FC5CF /* CRSystemButtonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSystemButtonController.m; sourceTree = "<group>"; };
+		B890C951241258A2008FC5CF /* CRMediaContainEditCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMediaContainEditCustom.h; sourceTree = "<group>"; };
+		B890C952241258A2008FC5CF /* CRMediaContainEditCustom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMediaContainEditCustom.m; sourceTree = "<group>"; };
 		E1B16FFFABC8ED627F6A8F06 /* Pods-DemoAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAPP.release.xcconfig"; path = "Target Support Files/Pods-DemoAPP/Pods-DemoAPP.release.xcconfig"; sourceTree = "<group>"; };
 		EDE9D79FA00280AAA8BD6F59 /* Pods-DemoAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAPP.debug.xcconfig"; path = "Target Support Files/Pods-DemoAPP/Pods-DemoAPP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,10 +188,12 @@
 		B8100E6E2410EBAD005328F0 /* MediaContainer */ = {
 			isa = PBXGroup;
 			children = (
-				B8100E6F2410EC71005328F0 /* CRMediaContainArrangement.h */,
-				B8100E702410EC71005328F0 /* CRMediaContainArrangement.m */,
+				B8100E6F2410EC71005328F0 /* CRMediaContainEdit.h */,
+				B8100E702410EC71005328F0 /* CRMediaContainEdit.m */,
 				B8100E722410EEFB005328F0 /* CRMediaEditCell.h */,
 				B8100E732410EEFB005328F0 /* CRMediaEditCell.m */,
+				B890C951241258A2008FC5CF /* CRMediaContainEditCustom.h */,
+				B890C952241258A2008FC5CF /* CRMediaContainEditCustom.m */,
 			);
 			path = MediaContainer;
 			sourceTree = "<group>";
@@ -211,6 +219,8 @@
 				B82D7573241105DC00D8B731 /* CRMeidaAddController.m */,
 				B82D757B241146D000D8B731 /* CRSecondWindowController.h */,
 				B82D757C241146D000D8B731 /* CRSecondWindowController.m */,
+				B890C94E24122B93008FC5CF /* CRSystemButtonController.h */,
+				B890C94F24122B93008FC5CF /* CRSystemButtonController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -351,11 +361,13 @@
 				B82D757D241146D000D8B731 /* CRSecondWindowController.m in Sources */,
 				B8100E6B2410E10B005328F0 /* CRUserStatus.m in Sources */,
 				B8100E522410D1FA005328F0 /* main.m in Sources */,
+				B890C953241258A2008FC5CF /* CRMediaContainEditCustom.m in Sources */,
 				B8100E692410E10B005328F0 /* CRMedia.m in Sources */,
 				B8100E6A2410E10B005328F0 /* CRAccount.m in Sources */,
 				B8100E6D2410E10B005328F0 /* CRFileManager.m in Sources */,
 				B8100E442410D1F9005328F0 /* SceneDelegate.m in Sources */,
-				B8100E712410EC71005328F0 /* CRMediaContainArrangement.m in Sources */,
+				B8100E712410EC71005328F0 /* CRMediaContainEdit.m in Sources */,
+				B890C95024122B93008FC5CF /* CRSystemButtonController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

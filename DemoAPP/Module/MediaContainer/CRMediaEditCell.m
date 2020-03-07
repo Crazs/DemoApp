@@ -8,6 +8,7 @@
 
 #import "CRMediaEditCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <Photos/Photos.h>
 
 @implementation CRMediaEditCell
 
@@ -27,22 +28,17 @@
     [self addSubview:rImageView];
     self.rImageView = rImageView;
     
-    
-    UIButton * playButton = [UIButton createImageButton:UIImage_name(@"play1") selectImage:UIImage_name(@"")];
-    [self addSubview:playButton];
-    self.playButton = playButton;
-    
+    UIImageView * playImageV = [[UIImageView alloc] initWithImage:UIImage_name(@"item_play")];
+    [self addSubview:playImageV];
+    self.playImageV = playImageV;
     
     UIButton * removeButton = [UIButton createImageButton:UIImage_name(@"item_remove") selectImage:UIImage_name(@"")];
     [self addSubview:removeButton];
     self.removeButton = removeButton;
     
+    playImageV.hidden = YES;
     
-    playButton.hidden = YES;
-    
-    [self.playButton addTarget:self action:@selector(pressPlayButton) forControlEvents:UIControlEventTouchUpInside];
     [self.removeButton addTarget:self action:@selector(pressRemoveButton) forControlEvents:UIControlEventTouchUpInside];
-    
     
     [self makeSubViewsLayout];
 }
@@ -52,7 +48,7 @@
         MAS_full(self, 0);
     }];
     
-    [self.playButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.playImageV mas_makeConstraints:^(MASConstraintMaker *make) {
         MAS_size(30);
         MAS_centerX(self.mas_centerX, 0);
         MAS_centerY(self.mas_centerY, 0);
@@ -64,12 +60,6 @@
     }];
 }
 
-- (void)pressPlayButton{
-    if (self.onClickPlayBtn) {
-        self.onClickPlayBtn();
-    }
-}
-
 - (void)pressRemoveButton{
     if (self.onClickRemoveBtn) {
         self.onClickRemoveBtn();
@@ -77,7 +67,19 @@
 }
 
 
-- (void)setCellModel:(CRMedia *)cellModel{
+- (void)setCellModel:(id)cellModel{
+
+    if ([cellModel isKindOfClass:[CRMedia class]]) {
+        [self setCRMediaModel:cellModel];
+    }else if ([cellModel isKindOfClass:[PHAsset class]]) {
+        [self setPHAssetModel:cellModel];
+    }else if ([cellModel isKindOfClass:[UIImage class]]) {
+        self.rImageView.image = cellModel;
+        self.playImageV.hidden = YES;
+    }
+}
+
+- (void)setCRMediaModel:(CRMedia *)cellModel{
     if (cellModel.mediaType == CRMediaTypeImage) {
         CRMediaImage * imageModel = (CRMediaImage *)cellModel;
         if (imageModel.image) {
@@ -87,7 +89,7 @@
         }else if (imageModel.urlPath) {
             [self.rImageView sd_setImageWithURL:[NSURL URLWithString:imageModel.urlPath]];
         }
-        self.playButton.hidden = YES;
+        self.playImageV.hidden = YES;
     }else if(cellModel.mediaType == CRMediaTypeVideo){
         CRMediaVideo * videoModel = (CRMediaVideo *)cellModel;
         if (videoModel.coverImage.image) {
@@ -97,9 +99,43 @@
         }else if (videoModel.coverImage.urlPath) {
             [self.rImageView sd_setImageWithURL:[NSURL URLWithString:videoModel.coverImage.urlPath]];
         }
-        self.playButton.hidden = NO;
-    }else{
-        self.playButton.hidden = YES;
+        self.playImageV.hidden = NO;
+    }else if(cellModel.mediaType == CRMediaTypeAudio){
+        self.rImageView.image = UIImage_name(@"media_audio");
+        self.playImageV.hidden = NO;
+    }else if(cellModel.mediaType == CRMediaTypeFile){
+        self.rImageView.image = UIImage_name(@"media_file");
+        self.playImageV.hidden = YES;
+    }
+}
+
+- (void)setPHAssetModel:(PHAsset *)cellModel{
+    /**
+     PHAssetMediaTypeUnknown = 0,
+     PHAssetMediaTypeImage   = 1,
+     PHAssetMediaTypeVideo   = 2,
+     PHAssetMediaTypeAudio   = 3,
+     */
+    PHImageRequestOptions *option = [PHImageRequestOptions new];
+    option.resizeMode =  PHImageRequestOptionsResizeModeExact;
+    option.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
+    if (cellModel.mediaType == PHAssetMediaTypeImage) {
+        
+        [[PHImageManager defaultManager] requestImageForAsset:cellModel targetSize:self.rImageView.size contentMode:PHImageContentModeDefault options:option resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            self.rImageView.image = result;
+        }];
+        self.playImageV.hidden = YES;
+    }else if(cellModel.mediaType == PHAssetMediaTypeVideo){
+        [[PHImageManager defaultManager] requestImageForAsset:cellModel targetSize:self.rImageView.size contentMode:PHImageContentModeDefault options:option resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+            self.rImageView.image = result;
+        }];
+        self.playImageV.hidden = NO;
+    }else if(cellModel.mediaType == PHAssetMediaTypeAudio){
+        self.rImageView.image = UIImage_name(@"media_audio");
+        self.playImageV.hidden = NO;
+    }else if(cellModel.mediaType == PHAssetMediaTypeUnknown){
+        self.rImageView.image = UIImage_name(@"media_file");
+        self.playImageV.hidden = YES;
     }
 }
 
