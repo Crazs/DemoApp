@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger maxCount;       //默认9
 @property (nonatomic, assign, readonly) NSUInteger currentCount;   //当前数量
+@property (nonatomic, assign) CGFloat estimatedHeight;  //预估高度
+@property (nonatomic, assign) BOOL isEdit;  //是否编辑
 
 - (void)resetMedias:(NSArray *)medias;
 - (void)addMedia:(id)media;

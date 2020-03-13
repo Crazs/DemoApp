@@ -75,6 +75,7 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
     //初始化子视图
     self.medias = [[NSMutableArray alloc] init];
     self.maxCount = D_maxCount;
+    self.isEdit = NO;
     
     self.showsVerticalScrollIndicator = NO;
     self.showsHorizontalScrollIndicator = NO;
@@ -99,6 +100,7 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
         return;
     }
     CGFloat maxH = (ceil(__itemCount / D_lineNum)) * (h + D_offset) + D_offset;
+    self.estimatedHeight = maxH;
     if (self.heightChange) {
         self.heightChange(maxH);
     }
@@ -126,6 +128,8 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
         [weakself reloadData];
     }];
     
+    cell.removeButton.hidden = !self.isEdit;
+    
     return cell;
 }
 
@@ -140,6 +144,13 @@ static CGFloat __sizeForCRMediaContainItem(CGFloat width){
     return self.medias.count;
 }
 
+- (void)setIsEdit:(BOOL)isEdit{
+    if (_isEdit == isEdit) {
+        return;
+    }
+    _isEdit = isEdit;
+    [self reloadData];
+}
 
 - (void)resetMedias:(NSArray *)medias{
     [self.medias setArray:[medias subarrayWithRange:NSMakeRange(0, MIN([self maxCount], medias.count))]];
