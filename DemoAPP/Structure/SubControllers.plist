@@ -16,15 +16,21 @@
 	</dict>
     <dict>
         <key>Class</key>
-        <string>CRSystemButtonController</string>
-        <key>Name</key>
-        <string>button样式</string>
-    </dict>
-    <dict>
-        <key>Class</key>
         <string>CRAlertTestController</string>
         <key>Name</key>
-        <string>AlertControl测试</string>
+        <string>alert展示</string>
+    </dict>
+	<dict>
+		<key>Class</key>
+		<string>CRSystemButtonController</string>
+		<key>Name</key>
+		<string>button样式</string>
+	</dict>
+    <dict>
+        <key>Class</key>
+        <string>CRScrollBarTestController</string>
+        <key>Name</key>
+        <string>ScrollBar</string>
     </dict>
 </array>
 </plist>

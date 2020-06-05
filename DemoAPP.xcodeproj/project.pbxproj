@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F694BE65CB448E10CE6AEAF /* Pods_DemoAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5165FBF498C8D000C9CCB63E /* Pods_DemoAPP.framework */; };
+		8D748415247C1F1A0087888F /* CRScrollBarTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D748414247C1F1A0087888F /* CRScrollBarTestController.m */; };
 		B8100E412410D1F9005328F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E402410D1F9005328F0 /* AppDelegate.m */; };
 		B8100E442410D1F9005328F0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E432410D1F9005328F0 /* SceneDelegate.m */; };
 		B8100E4A2410D1F9005328F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8100E482410D1F9005328F0 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		5165FBF498C8D000C9CCB63E /* Pods_DemoAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D748413247C1F1A0087888F /* CRScrollBarTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRScrollBarTestController.h; sourceTree = "<group>"; };
+		8D748414247C1F1A0087888F /* CRScrollBarTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRScrollBarTestController.m; sourceTree = "<group>"; };
 		B8100E3C2410D1F9005328F0 /* DemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8100E3F2410D1F9005328F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8100E402410D1F9005328F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 				B8BCF956241BD6ED00EF2779 /* CRAlertTestController.m */,
 				B8BCF959241BE66A00EF2779 /* CRSystemButtonController.h */,
 				B8BCF95A241BE66A00EF2779 /* CRSystemButtonController.m */,
+				8D748413247C1F1A0087888F /* CRScrollBarTestController.h */,
+				8D748414247C1F1A0087888F /* CRScrollBarTestController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				B82D75632410FFA800D8B731 /* MainTabBarController.m in Sources */,
 				B8BCF95B241BE66A00EF2779 /* CRSystemButtonController.m in Sources */,
 				B8100E6C2410E10B005328F0 /* CRAuthentication.m in Sources */,
+				8D748415247C1F1A0087888F /* CRScrollBarTestController.m in Sources */,
 				B89A257E24149941008130BD /* AccessoryBar.m in Sources */,
 				B82D756F2411008800D8B731 /* HomeViewController.m in Sources */,
 				B82D7574241105DC00D8B731 /* CRMeidaAddController.m in Sources */,

@@ -14,14 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CRBaseLib (0.0.1):
-    - AFNetworking (~> 3.2.1)
-    - CRHelperLib
-    - Masonry (~> 1.1.0)
-    - MJRefresh
-    - SDWebImage (~> 4.4.6)
-  - CRHelperLib (0.1.1):
-    - Masonry (~> 1.1.0)
+  - CRHelperLib (0.1.2):
+    - CRHelperLib/Bases (= 0.1.2)
+    - CRHelperLib/Common (= 0.1.2)
+    - CRHelperLib/MasonryExt (= 0.1.2)
+    - CRHelperLib/Network (= 0.1.2)
+  - CRHelperLib/Bases (0.1.2)
+  - CRHelperLib/Common (0.1.2)
+  - CRHelperLib/MasonryExt (0.1.2):
+    - Masonry
+  - CRHelperLib/Network (0.1.2)
+  - CRUILib (0.0.1):
+    - CRUILib/ScrollBarView (= 0.0.1)
+  - CRUILib/ScrollBarView (0.0.1)
   - CTAssetsPickerController (3.2.4):
     - PureLayout (~> 3.0.0)
   - Masonry (1.1.0)
@@ -33,8 +38,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
-  - CRBaseLib (from `~/Documents/CRBaseLib`)
   - CRHelperLib (from `~/Documents/CRHelperLib`)
+  - CRUILib (from `~/Documents/CRUILib`)
   - CTAssetsPickerController (~> 3.2.4)
   - Masonry (~> 1.1.0)
   - MJRefresh
@@ -50,21 +55,21 @@ SPEC REPOS:
     - SDWebImage
 
 EXTERNAL SOURCES:
-  CRBaseLib:
-    :path: "~/Documents/CRBaseLib"
   CRHelperLib:
     :path: "~/Documents/CRHelperLib"
+  CRUILib:
+    :path: "~/Documents/CRUILib"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CRBaseLib: 57a6810733706dc32a13b629545c13cb38a841bb
-  CRHelperLib: cce8e52f9e3b991c4eab15cbfaa414f43a71f0bb
+  CRHelperLib: a2c65896b865ab70bb5f5df97995bd40c128065f
+  CRUILib: 325c1a34e2ae3b9b2d1c0bdce6ef2ec2815bf61f
   CTAssetsPickerController: bc7264c9bc40064b7de4a66bf9948c2c5ce3f355
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
 
-PODFILE CHECKSUM: 95af42a30aa9c5cf62d58904e5012ae1f9a42d5e
+PODFILE CHECKSUM: 5182336bdf81643aa1b740d92e4a4f44fac013f0
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
