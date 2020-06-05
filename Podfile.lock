@@ -19,7 +19,8 @@ PODS:
     - CRHelperLib/Common (= 0.1.2)
     - CRHelperLib/MasonryExt (= 0.1.2)
     - CRHelperLib/Network (= 0.1.2)
-  - CRHelperLib/Bases (0.1.2)
+  - CRHelperLib/Bases (0.1.2):
+    - MJRefresh
   - CRHelperLib/Common (0.1.2)
   - CRHelperLib/MasonryExt (0.1.2):
     - Masonry
@@ -30,19 +31,18 @@ PODS:
   - CTAssetsPickerController (3.2.4):
     - PureLayout (~> 3.0.0)
   - Masonry (1.1.0)
-  - MJRefresh (3.3.1)
+  - MJRefresh (3.4.1)
   - PureLayout (3.0.2)
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
   - SDWebImage/Core (4.4.8)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.2.1)
+  - AFNetworking
   - CRHelperLib (from `~/Documents/CRHelperLib`)
   - CRUILib (from `~/Documents/CRUILib`)
   - CTAssetsPickerController (~> 3.2.4)
   - Masonry (~> 1.1.0)
-  - MJRefresh
   - SDWebImage (~> 4.4.6)
 
 SPEC REPOS:
@@ -62,14 +62,14 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CRHelperLib: a2c65896b865ab70bb5f5df97995bd40c128065f
+  CRHelperLib: b2fc9c303300e28e9cde2c7dff7f4a6110510f38
   CRUILib: 325c1a34e2ae3b9b2d1c0bdce6ef2ec2815bf61f
   CTAssetsPickerController: bc7264c9bc40064b7de4a66bf9948c2c5ce3f355
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  MJRefresh: 3153c59a363159092c08b2177ec3a7d09f90bfaf
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
 
-PODFILE CHECKSUM: 5182336bdf81643aa1b740d92e4a4f44fac013f0
+PODFILE CHECKSUM: b3fa9cfcda174ceac63ef8ff3a7aabe5cf94390e
 
 COCOAPODS: 1.9.1

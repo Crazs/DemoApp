@@ -12,6 +12,8 @@
 #import <AFNetworking/AFNetworking.h>
 
 #import <Masonry/Masonry.h>
-#import <CRHelperLib/CRHelperLib.h>
+#import <CRHelperLib/CRHelperLibExt.h>
+#import <CRHelperLib/CRBases.h>
+#import <CRHelperLib/CRMasonryExt.h>
 
 #endif /* PrefixHeader_pch */

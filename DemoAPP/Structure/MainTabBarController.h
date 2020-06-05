@@ -6,7 +6,6 @@
 //  Copyright © 2020 Crazs. All rights reserved.
 //
 
-#import <CRBaseLib/BaseTabBarController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

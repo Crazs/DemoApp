@@ -6,7 +6,6 @@
 //  Copyright © 2020 Crazs. All rights reserved.
 //
 
-#import <CRBaseLib/BaseViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

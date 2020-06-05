@@ -44,21 +44,21 @@
 
 #pragma mark - Private
 - (void)showAlert1{
-    UIAlertController * alert = [UIAlertController alertControllerWithMessage:@"showAlert1"];
+    UIAlertController * alert = [UIAlertController CR_alertControllerWithMessage:@"showAlert1"];
     [self presentViewController:alert animated:YES completion:nil];
 }
 - (void)showAlert2{
-    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"showAlert2" message:@"showAlert2"];
+    UIAlertController * alert = [UIAlertController CR_alertControllerWithTitle:@"showAlert2" message:@"showAlert2"];
     [self presentViewController:alert animated:YES completion:nil];
 }
 - (void)showAlert3{
-    UIAlertController * alert = [UIAlertController alertControllerWithMessage:@"showAlert3" confirm:^(UIAlertAction * _Nonnull action) {
+    UIAlertController * alert = [UIAlertController CR_alertControllerWithMessage:@"showAlert3" confirm:^(UIAlertAction * _Nonnull action) {
         self.msgLabel.text = @"showAlert3";
     }];
     [self presentViewController:alert animated:YES completion:nil];
 }
 - (void)showAlert4{
-    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"showAlert4" Message:@"showAlert4" confirm:^(UIAlertAction * _Nonnull action) {
+    UIAlertController * alert = [UIAlertController CR_alertControllerWithTitle:@"showAlert4" Message:@"showAlert4" confirm:^(UIAlertAction * _Nonnull action) {
         self.msgLabel.text = @"showAlert4";
     }];
     [self presentViewController:alert animated:YES completion:nil];

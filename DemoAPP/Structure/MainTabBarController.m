@@ -9,7 +9,6 @@
 #import "MainTabBarController.h"
 #import "HomeViewController.h"
 #import "MeViewController.h"
-#import <CRBaseLib/BaseNavigationController.h>
 
 @interface MainTabBarController ()
 

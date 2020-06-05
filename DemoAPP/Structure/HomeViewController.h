@@ -6,11 +6,10 @@
 //  Copyright © 2020 Crazs. All rights reserved.
 //
 
-#import <CRBaseLib/SimpleTableViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeViewController : SimpleTableViewController
+@interface HomeViewController : CR_simpleTableViewController
 
 @end
 

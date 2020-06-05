@@ -9,9 +9,8 @@ target 'DemoAPP' do
   pod 'CRHelperLib',    :path => '~/Documents/CRHelperLib'
   pod 'CRUILib',        :path => '~/Documents/CRUILib'
   pod 'Masonry', '~> 1.1.0'
-  pod 'AFNetworking', '~> 3.2.1'
+  pod 'AFNetworking'
   pod 'SDWebImage', '~> 4.4.6'
-  pod 'MJRefresh'
   pod 'CTAssetsPickerController', '~> 3.2.4'
 
   
