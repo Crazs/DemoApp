@@ -14,20 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CRHelperLib (0.1.2):
-    - CRHelperLib/Bases (= 0.1.2)
-    - CRHelperLib/Common (= 0.1.2)
-    - CRHelperLib/MasonryExt (= 0.1.2)
-    - CRHelperLib/Network (= 0.1.2)
-  - CRHelperLib/Bases (0.1.2):
-    - MJRefresh
-  - CRHelperLib/Common (0.1.2)
-  - CRHelperLib/MasonryExt (0.1.2):
-    - Masonry
-  - CRHelperLib/Network (0.1.2)
-  - CRUILib (0.0.1):
-    - CRUILib/ScrollBarView (= 0.0.1)
-  - CRUILib/ScrollBarView (0.0.1)
   - CTAssetsPickerController (3.2.4):
     - PureLayout (~> 3.0.0)
   - Masonry (1.1.0)
@@ -39,10 +25,9 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - CRHelperLib (from `~/Documents/CRHelperLib`)
-  - CRUILib (from `~/Documents/CRUILib`)
   - CTAssetsPickerController (~> 3.2.4)
   - Masonry (~> 1.1.0)
+  - MJRefresh
   - SDWebImage (~> 4.4.6)
 
 SPEC REPOS:
@@ -54,22 +39,14 @@ SPEC REPOS:
     - PureLayout
     - SDWebImage
 
-EXTERNAL SOURCES:
-  CRHelperLib:
-    :path: "~/Documents/CRHelperLib"
-  CRUILib:
-    :path: "~/Documents/CRUILib"
-
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CRHelperLib: b2fc9c303300e28e9cde2c7dff7f4a6110510f38
-  CRUILib: 325c1a34e2ae3b9b2d1c0bdce6ef2ec2815bf61f
   CTAssetsPickerController: bc7264c9bc40064b7de4a66bf9948c2c5ce3f355
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 3153c59a363159092c08b2177ec3a7d09f90bfaf
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
 
-PODFILE CHECKSUM: b3fa9cfcda174ceac63ef8ff3a7aabe5cf94390e
+PODFILE CHECKSUM: 0838b96b4d3cd4d95beea514059b91f8c5e46d55
 
 COCOAPODS: 1.9.1

@@ -8,6 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		4F694BE65CB448E10CE6AEAF /* Pods_DemoAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5165FBF498C8D000C9CCB63E /* Pods_DemoAPP.framework */; };
+		8D6F4CF2248E95E20036687B /* CRScrollBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4CE8248E95E20036687B /* CRScrollBarItem.m */; };
+		8D6F4CF3248E95E20036687B /* CRScrollBarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4CEE248E95E20036687B /* CRScrollBarConfig.m */; };
+		8D6F4CF4248E95E20036687B /* CRScrollBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4CEF248E95E20036687B /* CRScrollBarController.m */; };
+		8D6F4CF5248E95E20036687B /* CRScrollBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4CF0248E95E20036687B /* CRScrollBar.m */; };
+		8D6F4CF6248E95E20036687B /* CRScrollSelectedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4CF1248E95E20036687B /* CRScrollSelectedBar.m */; };
+		8D6F4D1F248EADC40036687B /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4CFC248EADC40036687B /* NetworkManager.m */; };
+		8D6F4D20248EADC40036687B /* CR_simpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D01248EADC40036687B /* CR_simpleTableViewController.m */; };
+		8D6F4D21248EADC40036687B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D02248EADC40036687B /* BaseViewController.m */; };
+		8D6F4D22248EADC40036687B /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D04248EADC40036687B /* BaseNavigationController.m */; };
+		8D6F4D23248EADC40036687B /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D05248EADC40036687B /* BaseModel.m */; };
+		8D6F4D24248EADC40036687B /* CR_simpleEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D06248EADC40036687B /* CR_simpleEmptyView.m */; };
+		8D6F4D25248EADC40036687B /* CR_simpleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D07248EADC40036687B /* CR_simpleCollectionViewController.m */; };
+		8D6F4D26248EADC40036687B /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D0B248EADC40036687B /* BaseTabBarController.m */; };
+		8D6F4D27248EADC40036687B /* CRUIAlertControllerExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D0E248EADC40036687B /* CRUIAlertControllerExt.m */; };
+		8D6F4D28248EADC40036687B /* CRUILabelExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D10248EADC40036687B /* CRUILabelExt.m */; };
+		8D6F4D29248EADC40036687B /* CRUIImageExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D12248EADC40036687B /* CRUIImageExt.m */; };
+		8D6F4D2A248EADC40036687B /* CRUITextViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D15248EADC40036687B /* CRUITextViewExt.m */; };
+		8D6F4D2B248EADC40036687B /* CRUIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D17248EADC40036687B /* CRUIViewExt.m */; };
+		8D6F4D2C248EADC40036687B /* CRUIColorExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D1C248EADC40036687B /* CRUIColorExt.m */; };
+		8D6F4D2D248EADC40036687B /* CRUIButtonExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4D1D248EADC40036687B /* CRUIButtonExt.m */; };
 		8D748415247C1F1A0087888F /* CRScrollBarTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D748414247C1F1A0087888F /* CRScrollBarTestController.m */; };
 		B8100E412410D1F9005328F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E402410D1F9005328F0 /* AppDelegate.m */; };
 		B8100E442410D1F9005328F0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8100E432410D1F9005328F0 /* SceneDelegate.m */; };
@@ -37,6 +57,51 @@
 
 /* Begin PBXFileReference section */
 		5165FBF498C8D000C9CCB63E /* Pods_DemoAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6F4CE8248E95E20036687B /* CRScrollBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRScrollBarItem.m; sourceTree = "<group>"; };
+		8D6F4CE9248E95E20036687B /* CRScrollBarConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRScrollBarConfig.h; sourceTree = "<group>"; };
+		8D6F4CEA248E95E20036687B /* CRScrollSelectedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRScrollSelectedBar.h; sourceTree = "<group>"; };
+		8D6F4CEB248E95E20036687B /* CRScrollBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRScrollBar.h; sourceTree = "<group>"; };
+		8D6F4CEC248E95E20036687B /* CRScrollBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRScrollBarController.h; sourceTree = "<group>"; };
+		8D6F4CED248E95E20036687B /* CRScrollBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRScrollBarItem.h; sourceTree = "<group>"; };
+		8D6F4CEE248E95E20036687B /* CRScrollBarConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRScrollBarConfig.m; sourceTree = "<group>"; };
+		8D6F4CEF248E95E20036687B /* CRScrollBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRScrollBarController.m; sourceTree = "<group>"; };
+		8D6F4CF0248E95E20036687B /* CRScrollBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRScrollBar.m; sourceTree = "<group>"; };
+		8D6F4CF1248E95E20036687B /* CRScrollSelectedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRScrollSelectedBar.m; sourceTree = "<group>"; };
+		8D6F4CF9248EADC40036687B /* CRMasonryExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMasonryExt.h; sourceTree = "<group>"; };
+		8D6F4CFB248EADC40036687B /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		8D6F4CFC248EADC40036687B /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		8D6F4CFE248EADC40036687B /* CR_simpleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CR_simpleCollectionViewController.h; sourceTree = "<group>"; };
+		8D6F4CFF248EADC40036687B /* CR_simpleEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CR_simpleEmptyView.h; sourceTree = "<group>"; };
+		8D6F4D00248EADC40036687B /* CRBases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBases.h; sourceTree = "<group>"; };
+		8D6F4D01248EADC40036687B /* CR_simpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CR_simpleTableViewController.m; sourceTree = "<group>"; };
+		8D6F4D02248EADC40036687B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8D6F4D03248EADC40036687B /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		8D6F4D04248EADC40036687B /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		8D6F4D05248EADC40036687B /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		8D6F4D06248EADC40036687B /* CR_simpleEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CR_simpleEmptyView.m; sourceTree = "<group>"; };
+		8D6F4D07248EADC40036687B /* CR_simpleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CR_simpleCollectionViewController.m; sourceTree = "<group>"; };
+		8D6F4D08248EADC40036687B /* CR_simpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CR_simpleTableViewController.h; sourceTree = "<group>"; };
+		8D6F4D09248EADC40036687B /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		8D6F4D0A248EADC40036687B /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		8D6F4D0B248EADC40036687B /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		8D6F4D0C248EADC40036687B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8D6F4D0E248EADC40036687B /* CRUIAlertControllerExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIAlertControllerExt.m; sourceTree = "<group>"; };
+		8D6F4D0F248EADC40036687B /* CRUIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIViewExt.h; sourceTree = "<group>"; };
+		8D6F4D10248EADC40036687B /* CRUILabelExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUILabelExt.m; sourceTree = "<group>"; };
+		8D6F4D11248EADC40036687B /* CRUITextViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUITextViewExt.h; sourceTree = "<group>"; };
+		8D6F4D12248EADC40036687B /* CRUIImageExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIImageExt.m; sourceTree = "<group>"; };
+		8D6F4D13248EADC40036687B /* CRUIColorExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIColorExt.h; sourceTree = "<group>"; };
+		8D6F4D14248EADC40036687B /* CRUIButtonExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIButtonExt.h; sourceTree = "<group>"; };
+		8D6F4D15248EADC40036687B /* CRUITextViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUITextViewExt.m; sourceTree = "<group>"; };
+		8D6F4D16248EADC40036687B /* CRUILabelExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUILabelExt.h; sourceTree = "<group>"; };
+		8D6F4D17248EADC40036687B /* CRUIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIViewExt.m; sourceTree = "<group>"; };
+		8D6F4D18248EADC40036687B /* CRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUtils.h; sourceTree = "<group>"; };
+		8D6F4D19248EADC40036687B /* CRUIAlertControllerExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIAlertControllerExt.h; sourceTree = "<group>"; };
+		8D6F4D1A248EADC40036687B /* CRUIImageExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIImageExt.h; sourceTree = "<group>"; };
+		8D6F4D1B248EADC40036687B /* CRUIFontExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIFontExt.h; sourceTree = "<group>"; };
+		8D6F4D1C248EADC40036687B /* CRUIColorExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIColorExt.m; sourceTree = "<group>"; };
+		8D6F4D1D248EADC40036687B /* CRUIButtonExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIButtonExt.m; sourceTree = "<group>"; };
+		8D6F4D1E248EADC40036687B /* CRHelperLibExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHelperLibExt.h; sourceTree = "<group>"; };
 		8D748413247C1F1A0087888F /* CRScrollBarTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRScrollBarTestController.h; sourceTree = "<group>"; };
 		8D748414247C1F1A0087888F /* CRScrollBarTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRScrollBarTestController.m; sourceTree = "<group>"; };
 		B8100E3C2410D1F9005328F0 /* DemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,9 +184,112 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8D6F4CE6248E95E20036687B /* CRUILib */ = {
+			isa = PBXGroup;
+			children = (
+				8D6F4CE7248E95E20036687B /* ScrollBarView */,
+			);
+			name = CRUILib;
+			path = ../CRUILib/CRUILib;
+			sourceTree = "<group>";
+		};
+		8D6F4CE7248E95E20036687B /* ScrollBarView */ = {
+			isa = PBXGroup;
+			children = (
+				8D6F4CEB248E95E20036687B /* CRScrollBar.h */,
+				8D6F4CF0248E95E20036687B /* CRScrollBar.m */,
+				8D6F4CE9248E95E20036687B /* CRScrollBarConfig.h */,
+				8D6F4CEE248E95E20036687B /* CRScrollBarConfig.m */,
+				8D6F4CEC248E95E20036687B /* CRScrollBarController.h */,
+				8D6F4CEF248E95E20036687B /* CRScrollBarController.m */,
+				8D6F4CED248E95E20036687B /* CRScrollBarItem.h */,
+				8D6F4CE8248E95E20036687B /* CRScrollBarItem.m */,
+				8D6F4CEA248E95E20036687B /* CRScrollSelectedBar.h */,
+				8D6F4CF1248E95E20036687B /* CRScrollSelectedBar.m */,
+			);
+			path = ScrollBarView;
+			sourceTree = "<group>";
+		};
+		8D6F4CF7248EADC40036687B /* CRHelperLib */ = {
+			isa = PBXGroup;
+			children = (
+				8D6F4CF8248EADC40036687B /* MasonryExt */,
+				8D6F4CFA248EADC40036687B /* Network */,
+				8D6F4CFD248EADC40036687B /* Bases */,
+				8D6F4D0D248EADC40036687B /* Common */,
+			);
+			name = CRHelperLib;
+			path = ../CRHelperLib/CRHelperLib;
+			sourceTree = "<group>";
+		};
+		8D6F4CF8248EADC40036687B /* MasonryExt */ = {
+			isa = PBXGroup;
+			children = (
+				8D6F4CF9248EADC40036687B /* CRMasonryExt.h */,
+			);
+			path = MasonryExt;
+			sourceTree = "<group>";
+		};
+		8D6F4CFA248EADC40036687B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8D6F4CFB248EADC40036687B /* NetworkManager.h */,
+				8D6F4CFC248EADC40036687B /* NetworkManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8D6F4CFD248EADC40036687B /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				8D6F4D09248EADC40036687B /* BaseModel.h */,
+				8D6F4D05248EADC40036687B /* BaseModel.m */,
+				8D6F4D0A248EADC40036687B /* BaseNavigationController.h */,
+				8D6F4D04248EADC40036687B /* BaseNavigationController.m */,
+				8D6F4D03248EADC40036687B /* BaseTabBarController.h */,
+				8D6F4D0B248EADC40036687B /* BaseTabBarController.m */,
+				8D6F4D0C248EADC40036687B /* BaseViewController.h */,
+				8D6F4D02248EADC40036687B /* BaseViewController.m */,
+				8D6F4CFE248EADC40036687B /* CR_simpleCollectionViewController.h */,
+				8D6F4D07248EADC40036687B /* CR_simpleCollectionViewController.m */,
+				8D6F4CFF248EADC40036687B /* CR_simpleEmptyView.h */,
+				8D6F4D06248EADC40036687B /* CR_simpleEmptyView.m */,
+				8D6F4D08248EADC40036687B /* CR_simpleTableViewController.h */,
+				8D6F4D01248EADC40036687B /* CR_simpleTableViewController.m */,
+				8D6F4D00248EADC40036687B /* CRBases.h */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		8D6F4D0D248EADC40036687B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8D6F4D1E248EADC40036687B /* CRHelperLibExt.h */,
+				8D6F4D19248EADC40036687B /* CRUIAlertControllerExt.h */,
+				8D6F4D0E248EADC40036687B /* CRUIAlertControllerExt.m */,
+				8D6F4D14248EADC40036687B /* CRUIButtonExt.h */,
+				8D6F4D1D248EADC40036687B /* CRUIButtonExt.m */,
+				8D6F4D13248EADC40036687B /* CRUIColorExt.h */,
+				8D6F4D1C248EADC40036687B /* CRUIColorExt.m */,
+				8D6F4D1B248EADC40036687B /* CRUIFontExt.h */,
+				8D6F4D1A248EADC40036687B /* CRUIImageExt.h */,
+				8D6F4D12248EADC40036687B /* CRUIImageExt.m */,
+				8D6F4D16248EADC40036687B /* CRUILabelExt.h */,
+				8D6F4D10248EADC40036687B /* CRUILabelExt.m */,
+				8D6F4D11248EADC40036687B /* CRUITextViewExt.h */,
+				8D6F4D15248EADC40036687B /* CRUITextViewExt.m */,
+				8D6F4D0F248EADC40036687B /* CRUIViewExt.h */,
+				8D6F4D17248EADC40036687B /* CRUIViewExt.m */,
+				8D6F4D18248EADC40036687B /* CRUtils.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		B8100E332410D1F9005328F0 = {
 			isa = PBXGroup;
 			children = (
+				8D6F4CF7248EADC40036687B /* CRHelperLib */,
+				8D6F4CE6248E95E20036687B /* CRUILib */,
 				B8100E3E2410D1F9005328F0 /* DemoAPP */,
 				B8100E3D2410D1F9005328F0 /* Products */,
 				5ACA3C896B321F60225A8511 /* Pods */,
@@ -379,26 +547,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6F4D29248EADC40036687B /* CRUIImageExt.m in Sources */,
 				B8100E412410D1F9005328F0 /* AppDelegate.m in Sources */,
 				B82D75692411003800D8B731 /* MeViewController.m in Sources */,
+				8D6F4CF6248E95E20036687B /* CRScrollSelectedBar.m in Sources */,
+				8D6F4CF3248E95E20036687B /* CRScrollBarConfig.m in Sources */,
 				B82D75632410FFA800D8B731 /* MainTabBarController.m in Sources */,
+				8D6F4D28248EADC40036687B /* CRUILabelExt.m in Sources */,
+				8D6F4D21248EADC40036687B /* BaseViewController.m in Sources */,
 				B8BCF95B241BE66A00EF2779 /* CRSystemButtonController.m in Sources */,
 				B8100E6C2410E10B005328F0 /* CRAuthentication.m in Sources */,
+				8D6F4D1F248EADC40036687B /* NetworkManager.m in Sources */,
 				8D748415247C1F1A0087888F /* CRScrollBarTestController.m in Sources */,
 				B89A257E24149941008130BD /* AccessoryBar.m in Sources */,
 				B82D756F2411008800D8B731 /* HomeViewController.m in Sources */,
 				B82D7574241105DC00D8B731 /* CRMeidaAddController.m in Sources */,
 				B8BCF957241BD6ED00EF2779 /* CRAlertTestController.m in Sources */,
+				8D6F4D2A248EADC40036687B /* CRUITextViewExt.m in Sources */,
+				8D6F4D22248EADC40036687B /* BaseNavigationController.m in Sources */,
+				8D6F4D2B248EADC40036687B /* CRUIViewExt.m in Sources */,
+				8D6F4CF2248E95E20036687B /* CRScrollBarItem.m in Sources */,
+				8D6F4D25248EADC40036687B /* CR_simpleCollectionViewController.m in Sources */,
 				B8100E742410EEFB005328F0 /* CRMediaEditCell.m in Sources */,
+				8D6F4CF5248E95E20036687B /* CRScrollBar.m in Sources */,
+				8D6F4D27248EADC40036687B /* CRUIAlertControllerExt.m in Sources */,
 				B82D757D241146D000D8B731 /* CRSecondWindowController.m in Sources */,
+				8D6F4D2D248EADC40036687B /* CRUIButtonExt.m in Sources */,
 				B8100E6B2410E10B005328F0 /* CRUserStatus.m in Sources */,
+				8D6F4CF4248E95E20036687B /* CRScrollBarController.m in Sources */,
+				8D6F4D23248EADC40036687B /* BaseModel.m in Sources */,
+				8D6F4D2C248EADC40036687B /* CRUIColorExt.m in Sources */,
 				B8100E522410D1FA005328F0 /* main.m in Sources */,
+				8D6F4D24248EADC40036687B /* CR_simpleEmptyView.m in Sources */,
 				B890C953241258A2008FC5CF /* CRMediaContainEditCustom.m in Sources */,
+				8D6F4D26248EADC40036687B /* BaseTabBarController.m in Sources */,
 				B8100E692410E10B005328F0 /* CRMedia.m in Sources */,
 				B8100E6A2410E10B005328F0 /* CRAccount.m in Sources */,
 				B8100E6D2410E10B005328F0 /* CRFileManager.m in Sources */,
 				B89A25832414A277008130BD /* AccessoryButtonItem.m in Sources */,
 				B8100E442410D1F9005328F0 /* SceneDelegate.m in Sources */,
+				8D6F4D20248EADC40036687B /* CR_simpleTableViewController.m in Sources */,
 				B8100E712410EC71005328F0 /* CRMediaContainEdit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

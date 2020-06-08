@@ -52,6 +52,25 @@
     scrollBar2.middleItems = [middleItemArr subarrayWithRange:NSMakeRange(0, 3)];
     scrollBar2.tintColor = UIColor.brownColor;
     scrollBar2.selectedColor = UIColor.magentaColor;
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        CGRect frame = scrollBar.frame;
+//        frame.size.height +=40;
+//        scrollBar.frame = frame;
+//
+//        frame = scrollBar2.frame;
+//        frame.size.height += 60;
+//        frame.origin.y += 60;
+//        scrollBar2.frame = frame;
+//    });
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        CRCustomBarItem *barItem = [leftItemArr firstObject];
+        barItem.title = @"p233";
+        
+    });
+    
 }
 
 
